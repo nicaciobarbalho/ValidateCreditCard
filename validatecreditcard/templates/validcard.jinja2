@@ -1,0 +1,21 @@
+{% extends "layout.jinja2" %}
+
+{% block cnpj %}
+
+
+               <form method="POST" action="/card/valid">
+                    <label for="exampleInputEmail1">Numeber Card
+                        <input type="text" name="number" class="form-control">
+                    </label>
+                    <span class="inpussst-group-btn">
+                        <button type="submit" name="valid" class="btn btn-default">
+                            <span class="glyphicon glyphicon-credit-card"></span>
+                        </button>
+                    </span>
+                   <br /> <br />
+                   <label id="message" name="message"  />{{ message }}
+                </form>
+
+
+
+{% endblock cnpj %}
