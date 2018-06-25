@@ -8,7 +8,7 @@ import herokuapp
 
 # server info
 host = '0.0.0.0'
-port = int(os.environ.get('PORT', '80'))
+port = int(os.environ.get('PORT', '5000'))
 
 settings = {}
 settings['sqlalchemy.url'] = os.environ['DATABASE_URL']
