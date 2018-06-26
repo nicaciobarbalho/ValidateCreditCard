@@ -23,7 +23,7 @@ tests_require = [
     ]
 
 setup(name='ValidateCreditCard',
-      version='0.0',
+      version='0.1.3',
       description='ValidateCreditCard',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
@@ -42,6 +42,7 @@ setup(name='ValidateCreditCard',
       extras_require={
           'testing': tests_require,
       },
+      packages=['pyramid_heroku'],
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
